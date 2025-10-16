@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { technologies } from "@/lib/data";
+import Image from "next/image";
 
 const container = {
   hidden: { opacity: 0 },
@@ -65,7 +66,7 @@ export function TechStack() {
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-accent/5 transition-colors"
                     >
-                      <img
+                      <Image
                         src={item.icon || "/placeholder.svg"}
                         alt={item.name}
                         className="w-8 h-8 object-contain"

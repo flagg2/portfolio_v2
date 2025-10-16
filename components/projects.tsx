@@ -13,6 +13,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { projects } from "@/lib/data";
+import Image from "next/image";
 
 type Project = (typeof projects)[0];
 
@@ -89,7 +90,7 @@ export function Projects() {
               >
                 <Card className="overflow-hidden h-full hover:shadow-lg transition-shadow pt-0">
                   <div className="relative">
-                    <img
+                    <Image
                       src={project.image || "/placeholder.svg"}
                       alt={t(`items.${project.id}.title`)}
                       className="w-full h-64 object-cover object-top"

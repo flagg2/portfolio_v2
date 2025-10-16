@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export function About() {
   const t = useTranslations("about");
@@ -41,7 +42,7 @@ export function About() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex-shrink-0"
           >
-            <img
+            <Image
               src="/headshot.jpeg"
               alt={t("alt")}
               className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-accent/20"
