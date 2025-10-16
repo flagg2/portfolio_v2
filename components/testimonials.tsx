@@ -35,7 +35,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-24 px-4 sm:px-6 lg:px-8 bg-white bg-grid"
+      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white bg-grid"
     >
       <div className="container mx-auto max-w-6xl">
         <motion.h2

@@ -63,7 +63,7 @@ export function Hero() {
             <p className="text-lg sm:text-xl text-muted-foreground">
               {t("greeting")}
             </p>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
+            <h1 className="text-2xl sm:text-4xl lg:text-7xl font-bold tracking-tight text-balance">
               {t("title")}
             </h1>
           </motion.div>

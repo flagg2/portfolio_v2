@@ -14,7 +14,7 @@
   },
   "hero": {
     "greeting": "Ahoj, volám sa Samuel a som",
-    "title": "Fullstack vývojár",
+    "title": "Fullstack developer",
     "description": "Nachádzam jednoduché riešenia pre zložité problémy. Poďme spolupracovať na Vašom projekte.",
     "viewWork": "Pozrieť projekty",
     "getInTouch": "Napíšte mi",
@@ -41,6 +41,7 @@
     "illustrative": "Ilustračný obrázok",
     "code": "Kód",
     "demo": "Demo",
+    "showMore": "Zobraziť viac",
     "items": {
       "hydration": {
         "title": "Hydration",

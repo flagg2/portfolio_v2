@@ -34,7 +34,7 @@ export function TechStack() {
   return (
     <section
       id="tech-stack"
-      className="py-24 px-4 sm:px-6 lg:px-8 bg-background"
+      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background"
     >
       <div className="container mx-auto max-w-6xl">
         <motion.h2
@@ -66,11 +66,14 @@ export function TechStack() {
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-accent/5 transition-colors"
                     >
-                      <Image
-                        src={item.icon || "/placeholder.svg"}
-                        alt={item.name}
-                        className="w-8 h-8 object-contain"
-                      />
+                      <div className="relative h-8 w-8">
+                        <Image
+                          fill
+                          src={item.icon || "/placeholder.svg"}
+                          alt={item.name}
+                          className="object-contain"
+                        />
+                      </div>
                       <span className="text-sm text-center">{item.name}</span>
                     </motion.div>
                   ))}

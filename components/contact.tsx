@@ -55,7 +55,10 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
+    <section
+      id="contact"
+      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background"
+    >
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-balance text-center">
           {t("title")}

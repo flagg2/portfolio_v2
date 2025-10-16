@@ -16,7 +16,10 @@ export function About() {
   };
 
   return (
-    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
+    <section
+      id="about"
+      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background"
+    >
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -45,6 +48,8 @@ export function About() {
             <Image
               src="/headshot.jpeg"
               alt={t("alt")}
+              width={256}
+              height={256}
               className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-accent/20"
             />
           </motion.div>

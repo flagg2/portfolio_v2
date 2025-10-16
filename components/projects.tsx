@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -22,16 +22,36 @@ type Category = "all" | "web" | "mobile" | "internal";
 export function Projects() {
   const t = useTranslations("projects");
   const [activeFilter, setActiveFilter] = useState<Category>("all");
+  const [itemsToShow, setItemsToShow] = useState(6);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    setItemsToShow(isMobile ? 3 : 6);
+  }, [activeFilter, isMobile]);
 
   const filteredProjects: Project[] =
     activeFilter === "all"
       ? projects
       : projects.filter((project) => project.category === activeFilter);
 
+  const projectsToShow = filteredProjects.slice(0, itemsToShow);
+
   return (
     <section
       id="projects"
-      className="py-24 px-4 sm:px-6 lg:px-8 bg-white bg-grid"
+      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white bg-grid"
     >
       <div className="container mx-auto max-w-6xl">
         <motion.h2
@@ -79,7 +99,7 @@ export function Projects() {
 
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project) => (
+            {projectsToShow.map((project) => (
               <motion.div
                 key={project.id}
                 layout
@@ -89,11 +109,12 @@ export function Projects() {
                 transition={{ duration: 0.3 }}
               >
                 <Card className="overflow-hidden h-full hover:shadow-lg transition-shadow pt-0">
-                  <div className="relative">
+                  <div className="relative h-64">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={t(`items.${project.id}.title`)}
-                      className="w-full h-64 object-cover object-top"
+                      fill
+                      className="object-cover object-top"
                     />
                     {project.illustrative && (
                       <span className="absolute bottom-2 right-2 rounded-md bg-background/80 px-2 py-1 text-xs text-foreground backdrop-blur-sm">
@@ -152,6 +173,18 @@ export function Projects() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {itemsToShow < filteredProjects.length && (
+          <div className="mt-8 text-center">
+            <Button
+              onClick={() =>
+                setItemsToShow((prev) => prev + (isMobile ? 3 : 6))
+              }
+            >
+              {t("showMore")}
+            </Button>
+          </div>
+        )}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
