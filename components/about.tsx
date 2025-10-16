@@ -16,10 +16,8 @@ export function About() {
   };
 
   return (
-    <section
-      id="about"
-      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background"
-    >
+    <section className="relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <span id="about" className="absolute -top-16" />
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -54,7 +52,7 @@ export function About() {
             />
           </motion.div>
           <div className="flex-1 text-center md:text-left space-y-6">
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="lg:text-lg leading-relaxed text-muted-foreground">
               {t("description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">

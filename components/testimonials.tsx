@@ -33,10 +33,8 @@ export function Testimonials() {
   };
 
   return (
-    <section
-      id="testimonials"
-      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white bg-grid"
-    >
+    <section className="relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white bg-grid">
+      <span id="testimonials" className="absolute -top-16" />
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

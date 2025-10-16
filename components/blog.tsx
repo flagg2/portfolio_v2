@@ -34,10 +34,8 @@ export function Blog() {
   const locale = useLocale();
 
   return (
-    <section
-      id="blog"
-      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background"
-    >
+    <section className="relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <span id="blog" className="absolute -top-16" />
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

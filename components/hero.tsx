@@ -31,10 +31,8 @@ export function Hero() {
   };
 
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden"
-    >
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden">
+      <span id="home" className="absolute -top-16" />
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/10" />
 
