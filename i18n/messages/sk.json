@@ -1,0 +1,169 @@
+{
+  "navigation": {
+    "home": "Domov",
+    "projects": "Projekty",
+    "testimonials": "Referencie",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "openMenu": "Otvoriť menu",
+    "closeMenu": "Zatvoriť menu",
+    "menu": "Menu",
+    "switchLanguage": "Zmeniť jazyk",
+    "english": "Angličtina",
+    "slovak": "Slovenčina"
+  },
+  "hero": {
+    "greeting": "Ahoj, volám sa Samuel a som",
+    "title": "Fullstack vývojár",
+    "description": "Nachádzam jednoduché riešenia pre zložité problémy. Poďme spolupracovať na Vašom projekte.",
+    "viewWork": "Pozrieť projekty",
+    "getInTouch": "Napíšte mi",
+    "scrollDown": "Prejsť nižšie",
+    "scrollDownLabel": "Prejsť nižšie",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn",
+    "xLabel": "X",
+    "emailLabel": "Email"
+  },
+  "about": {
+    "title": "O mne",
+    "description": "Som fullstack vývojár zo Slovenska. Tvorím webové a mobilné aplikácie s dôrazom na prehľadnosť a jednoduchosť pre používateľov. Oceňujem kvalitnú a priamu komunikáciu. Keď nepracujem, pravdepodobne leziem niekde na stene.",
+    "cta": "Pozrieť projekty",
+    "alt": "Samuel Wittlinger"
+  },
+  "projects": {
+    "title": "Vybrané projekty",
+    "all": "Všetko",
+    "webApps": "Webové aplikácie",
+    "mobileApps": "Mobilné aplikácie",
+    "internalSystems": "Interné systémy",
+    "letsBuildSomethingSimilar": "Poďme spolu vytvoriť niečo podobné",
+    "illustrative": "Ilustračný obrázok",
+    "code": "Kód",
+    "demo": "Demo",
+    "items": {
+      "hydration": {
+        "title": "Hydration",
+        "description": "Vytvoril som reprezentačnú stránku pre jeden z najväčších projektov v ekosystéme kryptomeny Polkadot."
+      },
+      "linkpal": {
+        "title": "Linkpal",
+        "description": "Vytvoril som platformu na výmenu spätných odkazov na zjednodušenie spolupráce medzi SEO špecialistami."
+      },
+      "kubo": {
+        "title": "KUBO Knihy",
+        "description": "Spravujem mobilnú aplikáciu pre KUBO Knihy platformu, kde dети môžu objavovať knihy, čítať a učiť sa."
+      },
+      "imooptik": {
+        "title": "Imooptik",
+        "description": "Vytvoril som interný systém pre imooptik, rýchlo rastúcu sieť optík na Slovensku. Umožňuje jednoduchú správu skladu, zákazníkov a objednávok."
+      },
+      "zssk": {
+        "title": "ZSSK ovládanie kamier",
+        "description": "Vytvoril som aplikáciu integrovanú do systémov ZSSK na ovládanie a sledovanie kamerových záznamov vo vlakoch."
+      },
+      "basilisk": {
+        "title": "Basilisk",
+        "description": "Navrhol a vytvoril som reprezentačnú stránku pre Basilisk, decentralizovanú burzu v decentralizovanom ekosystéme Polkadot."
+      },
+      "century21": {
+        "title": "Century 21",
+        "description": "Pracoval som v týme na vývoji rôznych funkcionalít pre Century 21, realitnú spoločnosť v Českej republike."
+      },
+      "bytydoliny": {
+        "title": "Bytydoliny",
+        "description": "Vytvoril som web pre Bytydoliny, ktorý prezentuje ich nehnuteľnosti na predaj pomocou interaktívnej mapy."
+      },
+      "ndrivers": {
+        "title": "NDrivers",
+        "description": "Vytvoril som Telegram aplikáciu pre NDrivers, ktorá ich členom umožňuje sa rýchlo a jednoducho registrovať na organizované podujatia."
+      },
+      "ejoin": {
+        "title": "Ejoin",
+        "description": "Pomohol som vytvoriť web pre Ejoin, jednu z najväčších spoločností na nabíjanie elektromobilov na Slovensku."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Technológie",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "toolsDevops": "Nástroje a DevOps",
+    "other": "Ostatné"
+  },
+  "testimonials": {
+    "title": "Čo hovoria klienti",
+    "cta": "Začnime spolu projekt",
+    "items": {
+      "valery": {
+        "name": "Valery",
+        "role": "Runtime Developer v Hydration",
+        "content": "Super práca s TypeScriptom a výborný dizajn. Striktne dodržiavané termíny a výborná komunikácia."
+      },
+      "imrich": {
+        "name": "Peter Imrich",
+        "role": "CEO v Imooptik",
+        "content": "Dodaný systém je jednoduchý, rýchly a prehľadný, čo výrazne uľahčuje každodennú prácu. Som spokojný s počiatočným produktom aj s priebežnou podporou."
+      },
+      "soos": {
+        "name": "Peter Soos",
+        "role": "CTO v KUBO Knihy",
+        "content": "Veľmi si cením našu spoluprácu. Samuel odvádza kvalitnú prácu a vždy dodržiava termíny, čo je pre nás kľúčové."
+      }
+    }
+  },
+  "blog": {
+    "title": "Najnovšie články",
+    "readMore": "Čítať viac",
+    "viewAll": "Zobraziť všetky články",
+    "items": {
+      "scalable-apis": {
+        "title": "Budovanie škálovateľných API s Node.js",
+        "description": "Naučte sa osvedčené postupy pre návrh a implementáciu RESTful API, ktoré dokážu spracovať milióny požiadaviek.",
+        "date": "2024-01-15",
+        "readTime": "8 minút čítania"
+      },
+      "react-patterns": {
+        "title": "Moderné vzory v Reacte v roku 2024",
+        "description": "Preskúmajte najnovšie vzory a techniky pre budovanie udržiavateľných aplikácií v Reacte.",
+        "date": "2024-01-08",
+        "readTime": "6 minút čítania"
+      },
+      "typescript-tips": {
+        "title": "Tipy pre lepší kód v TypeScript",
+        "description": "Pokročilé techniky TypeScriptu, ktoré urobia váš kód typovo bezpečnejším a udržiavateľnejším.",
+        "date": "2024-01-01",
+        "readTime": "10 minút čítania"
+      }
+    }
+  },
+  "contact": {
+    "title": "Napíšte mi",
+    "description": "Máte projekt? Porozprávajme sa, ako môžeme spolupracovať.",
+    "formTitle": "Pošlite mi správu",
+    "formDescription": "Napíšte mi správu a čoskoro sa Vám ozvem.",
+    "name": "Meno",
+    "email": "Email",
+    "message": "Správa",
+    "sendButton": "Odoslať",
+    "sending": "Odosielam...",
+    "success": "Email úspešne odoslaný!",
+    "error": "Nepodarilo sa odoslať email. Skúste to prosím znova.",
+    "emailLabel": "Email",
+    "locationLabel": "Lokalita",
+    "locationValue": "Slovensko, Bratislava",
+    "copyright": "© {year} Samuel Wittlinger. Všetky práva vyhradené."
+  },
+  "crossroads": {
+    "title": "Vitajte",
+    "description": "Kam by ste chceli ísť?",
+    "portfolioButton": "Navštíviť Portfólio",
+    "linkpalButton": "Navštíviť LinkPal",
+    "portfolioTitle": "Moje Portfólio",
+    "portfolioDescription": "Pozrite si moje najnovšie projekty a poďme spolupracovať.",
+    "portfolioImageAlt": "Náhľad Portfólia",
+    "linkpalTitle": "LinkPal",
+    "linkpalDescription": "Môj startup pre SEO špecialistov.",
+    "linkpalImageAlt": "Náhľad LinkPal"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "switchLanguage": "Switch language",
+    "english": "English",
+    "slovak": "Slovak"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Samuel and I'm a",
+    "title": "Fullstack Developer",
+    "description": "I find simple solutions to complex problems. Let's create something great together.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "scrollDown": "Scroll to explore",
+    "scrollDownLabel": "Scroll down",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn",
+    "xLabel": "X",
+    "emailLabel": "Email"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a full-stack developer from Slovakia. I focus on build web and mobile applications with a focus on maintainability and great user experience. I value good communication and straightforward collaboration. When I'm not working, I'm probably climbing something.",
+    "cta": "View My Work",
+    "alt": "Samuel Wittlinger"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "all": "All",
+    "webApps": "Web Apps",
+    "mobileApps": "Mobile Apps",
+    "internalSystems": "Internal Systems",
+    "letsBuildSomethingSimilar": "Let's build something similar",
+    "illustrative": "Illustrative Image",
+    "code": "Code",
+    "demo": "Demo",
+    "items": {
+      "hydration": {
+        "title": "Hydration",
+        "description": "Developed a stunning landing page for the biggest liquidity provider in the Polkadot cryptocurrency ecosystem."
+      },
+      "linkpal": {
+        "title": "Linkpal",
+        "description": "Built a backlink exchange platform for simple organic collaboration between SEO experts."
+      },
+      "kubo": {
+        "title": "KUBO Knihy",
+        "description": "Developed a mobile app for KUBO Knihy, a book library platform where children can explore, read and learn."
+      },
+      "imooptik": {
+        "title": "Imooptik",
+        "description": "Engineered a backoffice system for imooptik, a fast-growing chain of optical stores in Slovakia, to manage inventory, customers, and orders."
+      },
+      "zssk": {
+        "title": "ZSSK Camera Control",
+        "description": "Created an application integrated into the systems of ZSSK (Slovak Railway Company) for controlling and viewing camera feeds in trains."
+      },
+      "basilisk": {
+        "title": "Basilisk",
+        "description": "Designed and developed a landing page for Basilisk, a decentralized exchange on the Polkadot blockchain."
+      },
+      "century21": {
+        "title": "Century 21",
+        "description": "Worked as a part of the team to develop various features for Century 21, a real estate company in Czech Republic."
+      },
+      "bytydoliny": {
+        "title": "Bytydoliny",
+        "description": "Created a website for Bytydoliny, showcasing their properties for sale via an interactive map."
+      },
+      "ndrivers": {
+        "title": "NDrivers",
+        "description": "Created a telegram application for NDrivers, providing an easy way for members to register for events."
+      },
+      "ejoin": {
+        "title": "Ejoin",
+        "description": "Helped build a website for Ejoin, one of the largest EV charging station companies in Slovakia."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "toolsDevops": "Tools & DevOps",
+    "other": "Other"
+  },
+  "testimonials": {
+    "title": "What People Say",
+    "cta": "Start a Project Together",
+    "items": {
+      "valery": {
+        "name": "Valery",
+        "role": "Runtime Developer at Hydration",
+        "content": "Incredible work using TypeScript and some kick ass design. Very accurate with delivery timelines and great communication"
+      },
+      "imrich": {
+        "name": "Peter Imrich",
+        "role": "CEO at Imooptik",
+        "content": "The delivered system is simple, fast and well-arranged, making day-to-day work much easier. Good initial product as well as ongoing support."
+      },
+      "soos": {
+        "name": "Peter Soos",
+        "role": "CTO at KUBO Knihy",
+        "content": "I really appreciate our collaboration. Samuel delivers high quality work and always meets the deadline, which is crucial for us."
+      }
+    }
+  },
+  "blog": {
+    "title": "Latest Articles",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "items": {
+      "scalable-apis": {
+        "title": "Building Scalable APIs with Node.js",
+        "description": "Learn best practices for designing and implementing RESTful APIs that can handle millions of requests.",
+        "date": "2024-01-15",
+        "readTime": "8 min read"
+      },
+      "react-patterns": {
+        "title": "Modern React Patterns in 2024",
+        "description": "Explore the latest patterns and techniques for building maintainable React applications.",
+        "date": "2024-01-08",
+        "readTime": "6 min read"
+      },
+      "typescript-tips": {
+        "title": "TypeScript Tips for Better Code",
+        "description": "Advanced TypeScript techniques that will make your code more type-safe and maintainable.",
+        "date": "2024-01-01",
+        "readTime": "10 min read"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind? Let's discuss how we can work together.",
+    "formTitle": "Send me a message",
+    "formDescription": "Leave me a message and I'll get back to you soon.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendButton": "Send",
+    "sending": "Sending...",
+    "success": "Email sent successfully!",
+    "error": "Failed to send email. Please try again.",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "locationValue": "Slovakia, Bratislava",
+    "copyright": "© {year} Samuel Wittlinger. All rights reserved."
+  },
+  "crossroads": {
+    "title": "Welcome",
+    "description": "Where would you like to go?",
+    "portfolioButton": "Visit Portfolio",
+    "linkpalButton": "Visit LinkPal",
+    "portfolioTitle": "My Portfolio",
+    "portfolioDescription": "Check out my latest work and collaborate.",
+    "portfolioImageAlt": "Portfolio Screenshot",
+    "linkpalTitle": "LinkPal",
+    "linkpalDescription": "My startup for SEO specialists.",
+    "linkpalImageAlt": "LinkPal Screenshot"
+  }
+}
