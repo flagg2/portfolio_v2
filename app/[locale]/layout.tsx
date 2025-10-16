@@ -52,12 +52,13 @@ const locales = ["en", "sk"];
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
   // Validate locale
+  const { locale } = await params;
   if (!locales.includes(locale)) {
     notFound();
   }
