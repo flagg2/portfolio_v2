@@ -9,40 +9,40 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export function Navigation() {
   const t = useTranslations("navigation");
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["home", "projects", "testimonials", "blog", "contact"];
-      const scrollPosition = window.scrollY + 100;
+  //   useEffect(() => {
+  //     const handleScroll = () => {
+  //       const sections = ["home", "projects", "testimonials", "blog", "contact"];
+  //       const scrollPosition = window.scrollY + 100;
 
-      if (
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 1
-      ) {
-        setActiveSection("contact");
-        return;
-      }
+  //       if (
+  //         window.innerHeight + window.scrollY >=
+  //         document.body.offsetHeight - 1
+  //       ) {
+  //         setActiveSection("contact");
+  //         return;
+  //       }
 
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
+  //       for (const section of sections) {
+  //         const element = document.getElementById(section);
+  //         if (element) {
+  //           const { offsetTop, offsetHeight } = element;
+  //           if (
+  //             scrollPosition >= offsetTop &&
+  //             scrollPosition < offsetTop + offsetHeight
+  //           ) {
+  //             setActiveSection(section);
+  //             break;
+  //           }
+  //         }
+  //       }
+  //     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  //   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
