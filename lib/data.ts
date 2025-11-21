@@ -94,19 +94,19 @@ export const technologies = [
     items: [
       {
         name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        icon: "devicon-react-original colored",
       },
       {
         name: "Next.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        icon: "devicon-nextjs-plain colored",
       },
       {
         name: "TypeScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        icon: "devicon-typescript-plain colored",
       },
       {
         name: "Tailwind CSS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        icon: "devicon-tailwindcss-original colored",
       },
       { name: "shadcn/ui", icon: "https://ui.shadcn.com/favicon.ico" },
     ],
@@ -116,23 +116,23 @@ export const technologies = [
     items: [
       {
         name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        icon: "devicon-nodejs-plain colored",
       },
       {
         name: "TypeScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        icon: "devicon-typescript-plain colored",
       },
       {
         name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        icon: "devicon-postgresql-plain colored",
       },
       {
         name: "Supabase",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+        icon: "devicon-supabase-plain colored",
       },
       {
         name: "Redis",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+        icon: "devicon-redis-plain colored",
       },
     ],
   },
@@ -141,20 +141,20 @@ export const technologies = [
     items: [
       {
         name: "Git",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        icon: "devicon-git-plain colored",
       },
       {
         name: "Docker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        icon: "devicon-docker-plain colored",
       },
       {
         name: "Google Cloud",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+        icon: "devicon-googlecloud-plain colored",
       },
       { name: "Coolify", icon: "/coolify.svg" },
       {
         name: "Vercel",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+        icon: "devicon-vercel-original colored",
       },
     ],
   },
@@ -164,7 +164,7 @@ export const technologies = [
       { name: "Stripe", icon: "/stripe.webp" },
       {
         name: "Figma",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        icon: "devicon-figma-plain colored",
       },
       { name: "OpenAI", icon: "/openai.svg" },
     ],

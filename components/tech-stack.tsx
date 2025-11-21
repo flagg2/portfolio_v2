@@ -66,13 +66,18 @@ export function TechStack() {
                       whileHover={{ scale: 1.05 }}
                       className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-accent/5 transition-colors"
                     >
-                      <div className="relative h-8 w-8">
-                        <Image
-                          fill
-                          src={item.icon || "/placeholder.svg"}
-                          alt={item.name}
-                          className="object-contain"
-                        />
+                      <div className="relative h-8 w-8 flex items-center justify-center">
+                        {item.icon?.startsWith("/") ||
+                        item.icon?.startsWith("http") ? (
+                          <Image
+                            fill
+                            src={item.icon || "/placeholder.svg"}
+                            alt={item.name}
+                            className="object-contain"
+                          />
+                        ) : (
+                          <i className={`${item.icon} text-3xl`} />
+                        )}
                       </div>
                       <span className="text-sm text-center">{item.name}</span>
                     </motion.div>
