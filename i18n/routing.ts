@@ -6,5 +6,12 @@ export const routing = defineRouting({
 
   // Used when no locale matches
   defaultLocale: "en",
-  localePrefix: "as-needed",
+
+  /**
+   * Both locales carry their prefix, so every page has one address that names
+   * its language. With `as-needed` the English URL is the bare `/`, which the
+   * middleware then has to resolve by cookie on every request — and a language
+   * link pointing at `/` is indistinguishable from "stay where you are".
+   */
+  localePrefix: "always",
 });

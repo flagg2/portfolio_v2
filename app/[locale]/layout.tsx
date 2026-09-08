@@ -7,6 +7,9 @@ import { Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { hasLocale } from "next-intl";
+import { routing } from "@/i18n/routing";
+import "devicon/devicon.min.css";
 import "../globals.css";
 
 import {
@@ -48,8 +51,6 @@ export const metadata: Metadata = {
   generator: "v0.app",
 };
 
-const locales = ["en", "sk"];
-
 export default async function RootLayout({
   children,
   params,
@@ -57,9 +58,9 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
-  // Validate locale
+  // Validate locale against the one list that defines them
   const { locale } = await params;
-  if (!locales.includes(locale)) {
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
