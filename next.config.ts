@@ -4,14 +4,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig: NextConfig = {
   output: "standalone",
   images: {
+    // Only hosts we actually load from. A wildcard lets anyone make the
+    // optimizer fetch and decode arbitrary images (sharp/libheif RCE).
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
-      },
-      {
-        protocol: "http",
-        hostname: "**",
+        hostname: "ui.shadcn.com",
+        pathname: "/favicon.ico",
       },
     ],
   },
